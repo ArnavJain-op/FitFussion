@@ -37,7 +37,7 @@
   .bar {
     width: 100%;
     height: 2px;
-    background-color: var(--white);
+    background-color: #dadada;
     transition: all 0.3s ease;
   }
   
@@ -51,11 +51,6 @@
     margin-left: 6px;
   }
   
-  .hamburger {
-    /* position: absolute; */
-    top: 1.15rem;
-    right: 1.15rem;
-  }
   
   .hamburger-wrapper {
     width: 4rem;
@@ -64,7 +59,7 @@
     border-width: 1px;
     transition: all 500ms;
     position: absolute;
-    top: 2.5rem;
+    top: 3rem;
     right: 2rem;
     
     
@@ -89,7 +84,7 @@
   .mobile-nav {
     /* opacity: 0; */
     transform: scaleY(0);
-    transition: all .1s ease-in-out ;
+    transition: all 0s ease-in-out ;
     transform-origin: top;
     
   
@@ -137,7 +132,7 @@
     transform: rotate(0deg);
     transition: .5s ease-in-out;
     cursor: pointer;
-    top: 1.25rem;
+    top: 1.33rem;
     right: 1rem;
   
   }
@@ -147,7 +142,7 @@
     position: absolute;
     height: 2px;
     width: 100%;
-    background: var(--slate-50);
+    background: #dadada;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -189,25 +184,3 @@
   }
  
   
-
-  .btn{
-    cursor: pointer;
-    border: var(--white) 2px solid !important;
-    border-radius: 8px;
-    padding: .5rem 3rem !important;
-    font-weight: 500;
-    transition: color 500ms, background-color 500ms;
-  }
-  .btn:hover{
-    background-color: var(--cyan-600);
-    color: var(--black);
-  }
-
-  .inv-input{
-  margin-bottom: 15px;
-  padding: 10px;
-  border: none;
-  border-bottom: 2px solid #22d3ee;
-  font-size: 16px;
-  background: none;
-}
