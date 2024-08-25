@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Stories</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="website icon" type="png" href="photos/Firefly_logo_for_a_fitness_website_48989-removebg-preview.png">
+</head>
+<body class="bg-slate-950 ">
+
+    <header class="min-h-32 text-white">
+        <div class="flex justify-between p-8 items-center desktop-nav">
+            <div class="flex items-center gap-2">
+                <img src="photos/Firefly_logo_for_a_fitness_website_48989-removebg-preview.png" alt="" class="h-20 w-20">
+                <a class="interactable font-bold text-2xl heading" href="">FitFusion</a>
+            </div>
+
+            <nav class="p-4 border rounded-full mr-7">
+                <div class="">
+                    <a href="index.html" class=" text-center interactable px-4 nav-link">Home</a>
+                    <a href="blog.html" class=" text-center interactable px-4 nav-link">Blog</a>
+                    <a href="execises.html" class=" text-center interactable px-4 nav-link">Workout</a>
+                    <a href="nutrition.html" class=" text-center interactable px-4 nav-link">Nutrition</a>
+                    <a href="premium.html" class=" text-center interactable px-4 nav-link">Premium Section</a>
+                </div>
+            </nav>
+
+            <a href="" class="rounded-full border px-6 py-[0.65rem] interactable">Login</a>
+
+            <div class="flex justify-center w-full nav-hidden" id="hidden-nav">
+                <nav class="p-4 border rounded-full text-center" style="backdrop-filter: blur(10px);">
+                    <a href="index.html" class=" text-center interactable px-4 nav-link">Home</a>
+                    <a href="blog.html" class=" text-center interactable px-4 nav-link">Blog</a>
+                    <a href="execises.html" class=" text-center interactable px-4 nav-link">Workout</a>
+                    <a href="nutrition.html" class=" text-center interactable px-4 nav-link">Nutrition</a>
+                    <a href="premium.html" class=" text-center interactable px-4 nav-link">Premium Section</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="nav-responsive">
+            <div class="flex items-center z-[99999] justify-between p-12 fixed w-screen">
+                <div class="flex items-center">
+                    <img src="../static/img/logo-removebg-preview.png" alt="" class="h-16 w-16">
+                    <a class="interactable font-bold text-2xl heading" href="">SpaceIt</a>
+                </div>
+                <div class="hamburger-wrapper" onclick="toggleresponsive()">
+                    <div id="nav-icon3">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Top Banner -->
+    <div class="bg-blue-700 text-white text-center py-2">
+        <p class="font-bold text-sm md:text-base">
+            DOWNLOAD THE ANYTIME WORKOUTS APP NOW! Access 3,500 workouts, plans and videos anytime
+            <span class="text-xl">→</span>
+        </p>
+    </div>
+
+    <!-- Main Section -->
+    <section class="container mx-auto px-4 py-10">
+        <!-- Heading -->
+        <div class="text-center">
+            <h1 class="text-4xl font-bold text-gray-200">Coach. Care. Connect.</h1>
+            <p class="text-purple-600 text-lg mt-2">Virtual workouts. Health Coaching. Advice. Community</p>
+        </div>
+
+        <!-- Recent Stories Section -->
+        <section class="mt-16">
+            <h2 class="text-3xl font-bold mb-6 text-white">Recent Stories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Story 1 -->
+                <div class="flex space-x-4">
+                    <img src="photos/WhatsApp-Image-2024-07-31-at-10.34.24-AM.jpeg" alt="Story 1" class="w-36 h-24 object-cover rounded-lg">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-200">Energize, Recover, Repeat: Expert Tips on Pre & Post Workout Meal Nutrition</h3>
+                        <p class="text-gray-600 mt-2 text-white">
+                            Keeping up with your exercise regime is good but what we need along with the workout is proper nutrition...
+                        </p>
+                        <a href="#" class="text-purple-600 mt-2 inline-block">Read More &raquo;</a>
+                    </div>
+                </div>
+                <!-- Story 2 -->
+                <div class="flex space-x-4">
+                    <img src="photos/mumbai gyms.jpg" alt="Story 2" class="w-36 h-24 object-cover rounded-lg">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-200">Best Gyms in Mumbai</h3>
+                        <p class="text-gray-600 mt-2 text-white">
+                            Gateway of India makes Mumbai a unique city. Mumbai, formerly known as Bombay, is the capital city...
+                        </p>
+                        <a href="#" class="text-purple-600 mt-2 inline-block">Read More &raquo;</a>
+                    </div>
+                </div>
+                <!-- Story 3 -->
+                <div class="flex space-x-4">
+                    <img src="photos/Yoga-for-Better-Healthy-Living-Explore-Yoga-Exercises-for-Weight-Loss.jpg" alt="Story 3" class="w-36 h-24 object-cover rounded-lg">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-200">Yoga for Better & Healthy Living- Explore Yoga Exercises for Weight Loss</h3>
+                        <p class="text-gray-600 mt-2 text-white">
+                            A healthy person can indeed prosper in their life! In this fast-paced world, everyone struggles to be fit...
+                        </p>
+                        <a href="#" class="text-purple-600 mt-2 inline-block">Read More &raquo;</a>
+                    </div>
+                </div>
+                <!-- Story 4 -->
+                <div class="flex space-x-4">
+                    <img src="photos/Whey-Protein-vs.-Whey-Isolate-blog-featured-image.jpg" alt="Story 4" class="w-36 h-24 object-cover rounded-lg">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-200">Whey Protein vs. Whey Isolate: Insights from Anytime Fitness</h3>
+                        <p class="text-gray-600 mt-2 text-white">
+                            Protein powders are a staple when it comes to muscle growth and recovery! These are the components...
+                        </p>
+                        <a href="#" class="text-purple-600 mt-2 inline-block">Read More &raquo;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="mt-12 bg-slate-500">
+        <div class="bg-slate-500 text-white py-8">
+            <div class="max-w-screen-lg mx-auto text-center">
+                <p class="mb-4">
+                    FitFusion is dedicated to helping you achieve your fitness goals with top-notch workout plans, nutrition advice, and expert guidance. Join our community today and take the first step toward a healthier you!
+                </p>
+            </div>
+        </div>
+    
+        <div class="bg-slate-500 text-white py-8">
+            <div class="max-w-screen-lg mx-auto text-center">
+                <div class="bg-white text-blue-600 rounded-lg py-4 px-6 mb-4 inline-block">
+                    <p class="font-bold mb-2">Get Fitness Tips in Your Inbox!</p>
+                    <p class="mb-4">Subscribe to receive weekly workout tips, nutrition advice, and special offers directly to your inbox.</p>
+                    <button class="bg-yellow-400 text-black font-bold py-2 px-4 rounded">
+                        SIGN UP
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="bg-slate-500 text-white py-8">
+            <div class="max-w-screen-lg mx-auto text-center">
+                <p class="font-bold mb-4">Connect With Us</p>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://x.com/YourFitnessBrand" class="text-white text-2xl"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="https://www.instagram.com/YourFitnessBrand/" class="text-white text-2xl"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.facebook.com/YourFitnessBrand/" class="text-white text-2xl"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.youtube.com/channel/YourFitnessBrand" class="text-white text-2xl"><ion-icon name="logo-youtube"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
