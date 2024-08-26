@@ -1,186 +1,40 @@
-  
-  #hidden-nav {
-    position: fixed;
-    top: -100px; 
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    transition: transform 0.3s ease-in-out;
-    transform-origin: 50% 50% 0px;
-  }
-  
-  .nav-visible {
-    transform: translateY(125px); 
-  }
-  
-  .nav-link {
-    position: relative; 
-  }
-  
-  .nav-link::after {
-    content: '';
-    height: 2px;
-    background-color: whitesmoke;
-    width: 0;
-    position: absolute;
-    bottom: -5px;
-    left: 0.75rem;
-    transition: all .35s ease-in-out;
-  }
-  
-  .nav-link:hover::after {
-    width: 70%;
-  }
-  
-  
-  
-  .bar {
+.reviews-container {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
     width: 100%;
-    height: 2px;
-    background-color: #dadada;
-    transition: all 0.3s ease;
-  }
-  
-  .hamburger.active .bar1 {
-    transform: rotate(45deg) translateY(9px) ;
-    margin-left: 6px;
-  }
-  
-  .hamburger.active .bar2 {
-    transform: rotate(-45deg) translateY(-9px) ;
-    margin-left: 6px;
-  }
-  
-  
-  .hamburger-wrapper {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    border-width: 1px;
-    transition: all 500ms;
-    position: absolute;
-    top: 3rem;
-    right: 2rem;
-    
-    
-  }
-  
-  .wrapper-active {
-    width: 20rem;
-    height: 28rem;
-    border-radius: 10%;
-    transform: translateX(calc(50%-10rem));
-    /* right: 50%; */
-    max-width: 100%;
-    backdrop-filter: blur(10px);
-  }
-  
-  @media screen and (max-width:320px) {
-    .wrapper-active {
-      width: 15rem;
+
+}
+
+.reviews-container > .wrapper {
+    display: inline-block;
+    animation: scrollReviews 20s linear infinite;
+}
+
+.reviews-container > div > div {
+    display: inline-block;
+    margin-right: 10px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: none;
+    z-index: 0;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+
+}
+
+.reviews-container > div > div:hover{
+    transform: scale(1.2);
+    box-shadow: 2px 2px 5px 5px black;
+    z-index: 10;
+
+}
+
+/* Define the animation */
+@keyframes scrollReviews {
+    from {
+        transform: translateX(0);
     }
-  }
-  
-  .mobile-nav {
-    /* opacity: 0; */
-    transform: scaleY(0);
-    transition: all 0s ease-in-out ;
-    transform-origin: top;
-    
-  
-  }
-  
-  .mobile-active {
-    transform: scaleY(1);
-    transition: all 0.5s ease-in-out .3s;
-    top: 5rem;
-    left: 2rem;
-  }
-  
-  
-  @media (any-hover: hover) {
-    #trailer{
-      display: block !important;
+    to {
+        transform: translateX(-50%);
     }
-  }
-  
-  @media screen and (min-width:768px) {
-    .nav-responsive{
-      display: none;
-    }
-    
-    .desktop-nav{
-      display: flex;
-    }
-  }
-  
-  @media screen and (max-width:768px) {
-    .desktop-nav{
-      display: none !important;
-    }
-    .nav-responsive{
-      display: flex;
-    }
-    
-  }
-  
-  
-  #nav-icon3 {
-    width: 1.75rem;
-    height: 1rem;
-    position: absolute;
-    transform: rotate(0deg);
-    transition: .5s ease-in-out;
-    cursor: pointer;
-    top: 1.33rem;
-    right: 1rem;
-  
-  }
-  
-  #nav-icon3 span {
-    display: block;
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background: #dadada;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
-  }
-  
-  #nav-icon3 span:nth-child(1) {
-    top: 0px;
-  }
-  
-  #nav-icon3 span:nth-child(2),
-  #nav-icon3 span:nth-child(3) {
-    top: 0.5rem;
-  }
-  
-  #nav-icon3 span:nth-child(4) {
-    top: 1rem;
-  }
-  
-  #nav-icon3.open span:nth-child(1) {
-    top: 0.5rem;
-    width: 0%;
-    left: 50%;
-  }
-  
-  #nav-icon3.open span:nth-child(2) {
-    transform: rotate(45deg);
-  }
-  
-  #nav-icon3.open span:nth-child(3) {
-    transform: rotate(-45deg);
-  }
-  
-  #nav-icon3.open span:nth-child(4) {
-    top: 0.75rem;
-    width: 0%;
-    left: 50%;
-  }
- 
-  
+}

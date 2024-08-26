@@ -9,29 +9,32 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="website icon" type="png" href="photos/Firefly_logo_for_a_fitness_website_48989-removebg-preview.png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="bg-blush-100 text-brown-900">
-    <header class="min-h-32 bg-gradient-to-r from-orange-300 to-coral-400 p-8 ">
-        <div class="flex justify-between items-center">
+<body class="bg-black text-white">
+    <header class="min-h-32  ">
+        <div class="flex justify-between p-8 items-center desktop-nav">
             <div class="flex items-center gap-2">
-                <img src="photos/Firefly_logo_for_a_fitness_website_48989-removebg-preview.png" alt="FitFusion Logo" class="h-20 w-20">
-                <a class="text-2xl font-bold heading tracking-wide text-white" href="#">FitFusion</a>
+                <img src="photos/Firefly_logo_for_a_fitness_website_48989-removebg-preview.png" alt="" class="h-20 w-20">
+                <a class="interactable font-bold text-2xl heading text-white" href="">FitFusion</a>
             </div>
-            <nav class="p-4 border rounded-full bg-white">
+
+            <nav class="p-4 border rounded-full bg-gray-900">
                 <div class="">
-                    <a href="index.html" class="text-center interactable px-4 nav-link text-pink-500 hover:text-pink-700">Home</a>
-                    <a href="blog.html" class="text-center interactable px-4 nav-link text-red-500 hover:text-red-700">Blog</a>
-                    <a href="exercises.html" class="text-center interactable px-4 nav-link text-orange-500 hover:text-orange-700">Workout</a>
-                    <a href="nutrition.html" class="text-center interactable px-4 nav-link text-yellow-500 hover:text-yellow-700">Nutrition</a>
-                    <a href="premium.html" class="text-center interactable px-4 nav-link text-green-500 hover:text-green-700">Premium Section</a>
+                    <a href="index.html" class="text-center interactable px-4 nav-link text-pink-500 ">Home</a>
+                    <a href="blog.html" class="text-center interactable px-4 nav-link text-red-500 ">Blog</a>
+                    <a href="exercises.html" class="text-center interactable px-4 nav-link text-orange-500 ">Workout</a>
+                    <a href="nutrition.html" class="text-center interactable px-4 nav-link text-yellow-500 ">Nutrition</a>
+                    <a href="premium.html" class="text-center interactable px-4 nav-link text-green-500 ">Premium Section</a>
                 </div>
             </nav>
-            <a href="login.html" class="px-6 py-2 bg-yellow-400 text-brown-900 rounded-full hover:bg-yellow-500">Login</a>
+
+            <a href="" class="rounded-full border px-6 py-[0.65rem] bg-gray-900 text-pink-500 ">Login</a>
         </div>
     </header>
 
-    <section class="bg-gradient-to-r from-orange-300 to-coral-400 text-center py-24">
+    <section class=" text-center py-24">
         <div class="max-w-4xl mx-auto">
             <h1 class="text-6xl font-extrabold mb-4 text-yellow-600">Fuel Your Body, Feed Your Soul</h1>
             <p class="text-xl mb-8 text-brown-800">Discover expert nutrition tips, healthy recipes, and personalized meal plans to help you reach your goals.</p>
@@ -39,9 +42,13 @@
         </div>
     </section>
 
-    <section class="py-20 bg-coral-100">
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+    <div class="reviews-container">
+        <div class="absolute inset-0 pointer-events-none w-[100vw] z-[100]" style="background-image: linear-gradient(to right, black 0%, black 5%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, black 95%, black 100%);
+
+"></div>
+
+        <div class="wrapper">
+            <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden">
                 <img src="photos/1st.webp" alt="Healthy Recipe" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h2 class="text-2xl font-bold text-brown-900 mb-4">Healthy Breakfast Ideas</h2>
@@ -49,7 +56,7 @@
                     <button class="px-4 py-2 bg-orange-500 text-white font-semibold rounded-md hover:bg-orange-600">View Recipes</button>
                 </div>
             </div>
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden ">
                 <img src="photos/2nd.webp" alt="Meal Plan" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h2 class="text-2xl font-bold text-brown-900 mb-4">Personalized Meal Plans</h2>
@@ -57,7 +64,7 @@
                     <button class="px-4 py-2 bg-orange-500 text-white font-semibold rounded-md hover:bg-orange-600">Get Your Plan</button>
                 </div>
             </div>
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden">
                 <img src="photos/3rd.webp" alt="Nutrition Tips" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h2 class="text-2xl font-bold text-brown-900 mb-4">Expert Nutrition Tips</h2>
@@ -66,12 +73,13 @@
                 </div>
             </div>
         </div>
-    </section>
+</div>
 
-    <section class="py-20 bg-orange-200">
+
+    <section class="py-20 ">
         <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10">
             <div class="flex items-center">
-                <div class="text-brown-900">
+                <div class="">
                     <h2 class="text-4xl font-bold mb-4">Join Our Nutrition Community</h2>
                     <p class="text-lg mb-6">Connect with like-minded individuals, share your progress, and get support from our experts. Join our exclusive community to stay motivated and achieve your nutrition goals.</p>
                     <button class="px-6 py-3 bg-yellow-400 text-brown-900 font-bold rounded-md hover:bg-yellow-500">Join Now</button>
@@ -83,7 +91,7 @@
         </div>
     </section>
 
-    <footer class="bg-gradient-to-r from-red-700 to-orange-800 text-white py-12">
+    <footer class="bg-gray-900 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <p class="text-lg mb-6">Stay up to date with the latest nutrition trends, healthy recipes, and special offers by subscribing to our newsletter.</p>
             <button class="px-6 py-2 bg-yellow-400 text-brown-900 font-bold rounded-md hover:bg-yellow-500">Subscribe Now</button>
@@ -98,3 +106,4 @@
 </body>
 
 </html>
+
